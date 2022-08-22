@@ -1,6 +1,6 @@
 package trello
 
-external class TrelloPowerUp {
+external class TrelloPowerup {
     companion object {
         fun initialize(functions: Any)
     }
