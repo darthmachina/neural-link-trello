@@ -1,7 +1,7 @@
-import trello.TrelloPowerup
+import trello.TrelloPowerUp
 
 fun main() {
-    TrelloPowerup.initialize(mapOf(
+    TrelloPowerUp.initialize(mapOf(
         Pair("card-buttons", ::cardButtons)
     ))
 }
