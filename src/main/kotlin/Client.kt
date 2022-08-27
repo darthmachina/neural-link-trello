@@ -9,7 +9,7 @@ fun main() {
                     text: 'Estimate Size',
                     callback: function(t) {
                         console.log("callback nl", nl);
-                        nl.neurallink.NeuralLink.cardButtons(t); 
+                        nl.neurallink.cardButtons(t); 
                     }
                 }];
             },
