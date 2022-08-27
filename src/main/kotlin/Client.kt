@@ -1,11 +1,12 @@
-import trello.TrelloPowerUp
-
 fun main() {
-    TrelloPowerUp.initialize(mapOf(
-        Pair("card-buttons", ::cardButtons)
-    ))
-}
-
-fun cardButtons(t: Any, options: Any) : Map<String,String> {
-    return mapOf(Pair("text", "Test Button"))
+    js("""var nl = require('neural-link-trello');
+        TrelloPowerUp.initialize({
+            'card-buttons': function(t, options){
+                return [{
+                    icon: '/static/icon-dark.png',
+                    text: 'Estimate Size',
+                    callback: function(t) { nl.cardButtons(t); }
+                }];
+            },
+        });""")
 }
