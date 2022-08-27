@@ -8,7 +8,9 @@ package neurallink
 @JsExport
 @JsName("NeuralLink")
 class NeuralLinkPowerUp {
-    fun cardButtons(t: Any) {
-        console.log("cardButton(), t: $t")
+    companion object {
+        fun cardButtons(t: Any) {
+            console.log("cardButton(), t: $t")
+        }
     }
 }
