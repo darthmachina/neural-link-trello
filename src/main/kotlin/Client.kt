@@ -1,5 +1,6 @@
 fun main() {
     js("""var nl = require('neural-link-trello');
+        console.log("nl created, calling initialize()");
         TrelloPowerUp.initialize({
             'card-buttons': function(t, options) {
                 console.log("card-buttons capability")
