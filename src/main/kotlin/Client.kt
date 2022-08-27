@@ -6,7 +6,7 @@ fun main() {
                 console.log("card-buttons capability")
                 return [{
                     icon: '/static/icon-dark.png',
-                    text: 'Estimate Size',
+                    text: 'Neural Link Test',
                     callback: function(t) {
                         console.log("callback nl", nl);
                         nl.cardButtons(t); 
